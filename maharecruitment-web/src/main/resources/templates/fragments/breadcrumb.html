@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<div th:fragment="breadcrumb">
+    <nav aria-label="breadcrumb" style="padding:10px;">
+        <ol class="breadcrumb">
+
+            <li th:each="entry, stat : ${breadcrumb.entrySet()}"
+                th:class="${stat.last} ? 'breadcrumb-item active' : 'breadcrumb-item'">
+
+                <a th:if="!${stat.last}" th:href="${entry.value}" th:text="${entry.key}"></a>
+
+                <span th:if="${stat.last}" th:text="${entry.key}"></span>
+            </li>
+
+        </ol>
+    </nav>
+</div>
+
+</body>
+</html>

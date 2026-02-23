@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HRMS | Attendance</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #f5f7fa;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .page-card {
+            background: white;
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            margin-top: 25px;
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .page-title {
+            font-size: 26px;
+            font-weight: 600;
+            color: #004aad;
+            margin-bottom: 15px;
+        }
+
+        .page-description {
+            font-size: 16px;
+            color: #444;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Dynamic Breadcrumb -->
+<div th:replace="~{fragments/breadcrumb :: breadcrumb}"></div>
+
+
+<div class="container">
+
+    <!-- Main Module Card -->
+    <div class="page-card">
+
+        <div class="page-title">
+            <i class="fa-solid fa-calendar-check"></i> Attendance Module
+        </div>
+
+        <p class="page-description" th:text="${message}">
+            Welcome to Attendance Module.
+        </p>
+
+        <hr>
+
+        <!-- Example Feature Cards -->
+        <div class="row g-3">
+
+            <div class="col-md-4">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fa-solid fa-user-clock text-primary"></i> Daily Attendance
+                        </h5>
+                        <p class="card-text text-muted">Mark or verify employee daily attendance.</p>
+                        <a href="#" class="btn btn-primary btn-sm">Open</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fa-solid fa-calendar-days text-success"></i> Monthly Summary
+                        </h5>
+                        <p class="card-text text-muted">View complete monthly attendance records.</p>
+                        <a href="#" class="btn btn-success btn-sm">Open</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fa-solid fa-file-signature text-warning"></i> Attendance Reports
+                        </h5>
+                        <p class="card-text text-muted">Generate attendance reports and analytics.</p>
+                        <a href="#" class="btn btn-warning btn-sm text-white">Open</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

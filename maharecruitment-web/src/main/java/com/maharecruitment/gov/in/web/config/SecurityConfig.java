@@ -1,7 +1,5 @@
 package com.maharecruitment.gov.in.web.config;
 
-import java.util.List;
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -9,13 +7,6 @@ import org.springframework.security.config.annotation.authentication.configurati
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.header.writers.CacheControlHeadersWriter;
-
-import com.maharecruitment.gov.in.security.handler.CustomAccessDeniedHandler;
-import com.maharecruitment.gov.in.security.handler.CustomLoginSuccessHandler;
-import com.maharecruitment.gov.in.security.handler.CustomLogoutSuccessHandler;
-
-
-
 
 @Configuration
 public class SecurityConfig {

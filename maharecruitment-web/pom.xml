@@ -1,48 +1,74 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>com.maharecruitment.gov.in</groupId>
-		<artifactId>maharecruitment-parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>
-	<artifactId>maharecruitment-web</artifactId>
-	<packaging>war</packaging>
-	<name>maharecruitment-web</name>
-	<description>maharecruitment-web</description>
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
+    <modelVersion>4.0.0</modelVersion>
 
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
+    <parent>
+        <groupId>com.maharecruitment.gov.in</groupId>
+        <artifactId>maharecruitment-parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
 
-		<dependency>
-			<groupId>com.maharecruitment.gov.in</groupId>
-			<artifactId>maharecruitment-common</artifactId>
-			<version>${project.version}</version>
-		</dependency>
+    <artifactId>maharecruitment-web</artifactId>
+    <packaging>war</packaging>
+    <name>maharecruitment-web</name>
 
-		<dependency>
-			<groupId>com.maharecruitment.gov.in</groupId>
-			<artifactId>maharecruitment-attendance</artifactId>
-			<version>${project.version}</version>
-		</dependency>
+    <dependencies>
 
-		<dependency>
-			<groupId>com.maharecruitment.gov.in</groupId>
-			<artifactId>maharecruitment-security</artifactId>
-			<version>${project.version}</version>
-		</dependency>
+        <!-- Spring Web -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
 
-		<dependency>
-			<groupId>com.maharecruitment.gov.in</groupId>
-			<artifactId>maharecruitment-agency</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-	</dependencies>
+        <!-- Spring Security -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
 
+        <!-- Tomcat provided (IMPORTANT for WAR) -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Internal Modules -->
+        <dependency>
+            <groupId>com.maharecruitment.gov.in</groupId>
+            <artifactId>maharecruitment-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.maharecruitment.gov.in</groupId>
+            <artifactId>maharecruitment-attendance</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.maharecruitment.gov.in</groupId>
+            <artifactId>maharecruitment-security</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.maharecruitment.gov.in</groupId>
+            <artifactId>maharecruitment-agency</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

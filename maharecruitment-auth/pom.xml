@@ -6,7 +6,7 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>maharecruitment-auth</artifactId>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
   <name>maharecruitment-auth</name>
   <description>maharecruitment-auth</description>
 </project>

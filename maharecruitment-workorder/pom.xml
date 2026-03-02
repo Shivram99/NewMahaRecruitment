@@ -6,7 +6,7 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>maharecruitment-workorder</artifactId>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
   <name>maharecruitment-workorder</name>
   <description>maharecruitment-workorder</description>
 </project>

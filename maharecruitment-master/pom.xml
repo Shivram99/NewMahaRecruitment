@@ -6,7 +6,7 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>maharecruitment-master</artifactId>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
   <name>maharecruitment-master</name>
   <description>maharecruitment-master</description>
 </project>

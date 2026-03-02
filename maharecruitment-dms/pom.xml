@@ -6,7 +6,7 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>maharecruitment-dms</artifactId>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
   <name>maharecruitment-dms</name>
   <description>maharecruitment-dms</description>
 </project>

@@ -6,7 +6,7 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>maharecruitment-invoice</artifactId>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
   <name>maharecruitment-invoice</name>
   <description>maharecruitment-invoice</description>
 </project>
